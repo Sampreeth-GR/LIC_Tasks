@@ -2,7 +2,9 @@
 Linear integrated circuit 
 
 
-TASK1 : i) to find DC operating point
+TASK1 :
+Design 1
+        i) to find DC operating point
         ii) to do AC analysis
         iii) to do transient analysis and calculate gain.
 ![Screenshot 2025-02-12 194542](https://github.com/user-attachments/assets/98fd84ea-4e0f-40a0-a52f-e8323b9089a1)
@@ -132,8 +134,127 @@ iii) to do transient analysis and calculating gain
 
 
 
+
+
+
+
+
+TASK 2:
+Design 2
+        i) to find DC operating point
+        ii) to do DC sweep
+        iii) to do AC analysis
+        iv) to do transient analysis and calculate gain.
+
+![Screenshot 2025-02-16 224205](https://github.com/user-attachments/assets/b97a5825-2f05-4a29-a873-6939c21a00d9)
+
+
+this circuit is same as design 1 but we have replaced resistor R by a mosfet 
+circuit analysis:
+* The above circuit consist of NMOS4 and PMOS4
+* Two DC voltage source [V1,V2]
+* V2= gate voltage = 0.9volt
+* V1= VDD = 1.8volt
  
 
+i) to find DC operating point 
+
+  from Eq: P=VI
+  where P=100u and V=1.8V we can find I 
+  I=P/V=55.55µA = 5.5551 X 10-5
+  where I is drain current, hence I=Id
+  now if we know Id, by trial and error we can find the width and length ot the MOSFET by keeping anyone of the parameter constant
+  lets keep length constant say 2µ meter. from trial and error we found ot that the width should be 4.17µ meter to get Id as 55.55µA.
+  to find rest of the parameters we need to do simulation 
+  to do simulation we need to go to simulation tab and select edit simulation and select DC op pnt and click ok 
+  at last we need to run the simulation
+  ![Screenshot 2025-02-16 225019](https://github.com/user-attachments/assets/cb6f05df-b2ba-47fa-b222-20826006b5ea)
+  the above is the result of the simulation.
+
+
+
+ii) to do DC sweep:
+  to do DC sweep we need to go to simulation select edit simulation and  a popup window appears and give the following reading
+  for name of the first source to sweep: v2
+  type of sweep: linear
+  start value: 0
+  stop value: 1.8
+  increment: 0.1
+  click Ok and run the simulation. 
+  ![Screenshot 2025-02-16 225924](https://github.com/user-attachments/assets/50f9ba51-1f9e-43e6-9353-8051b1d19811)
+
+  the above is the graph we get after simulation.
+  here (Green Line: V(2)) represents the input voltage 
+  It sweeps linearly from 0V to 1.8V (the supply voltage V1)
+  (Blue Line: V(out)) represents the output voltage It shows the corresponding output voltage as the input voltage is varied.
+
+
+  iii) to do AC analysis
+   we need to change or generate sine waveform with specified amplitude and frequency 
+  so we need to right click on the V1 and select advanced and we need select sine we get option to type the specification.
+  for DC offset = 0.9V
+  for amplitude = 50mV
+  for frequency = 1KHz
+  at right side of the popup window there will me a box with tittle small signal AC analysis there we need to give AC amplitude as 1.
+   to do simulation we need to go to simulation tab and select edit simulation and AC analysis and fill the following
+type of sweep : decade
+number of points per decade : 20
+start frequency : 0.1Hz
+stop frequency : 1THz
+  click ok and run the simulation 
+  ![Screenshot 2025-02-16 230642](https://github.com/user-attachments/assets/f976525b-77b1-403f-9fcd-5deaa26954ed)
+  the above is the graph we get after simulation.
+  here
+  The green line represents the input voltage (V2).
+  The blue line represents the output voltage (Vout) in dB.
+  The x-axis represents frequency (log scale) from 100 mHz to 1 THz. 
+  The y-axis represents gain (dB) and phase shift (degrees).It remains nearly constant at 0 dB, which is expected because the input signal has a fixed amplitude across frequencies.
+
+
+
+ iv) to do transient analysis
+  to do transient analysis we need to click on simulation tab and select edit simulation in the popup window we need to select transient and give the specifications 
+   for stop time : 5ms
+   for time to start saving data : 0s
+   and click ok and run the simulation
+   ![Screenshot 2025-02-16 230944](https://github.com/user-attachments/assets/492d6f1c-b03d-4dc9-b3a5-e74d90a08c0e)
+
+   the above is the graph we get after simulation.
+   here
+   The green line represents the input voltage (V2).
+   the blue line represents the output voltage .
+   the output volatage graph looks like inverted sine wave because it is one of the charecteristics of CS amplifier
+
+   to calculate gain we need to find ratio of Vout/V1
+   by looking in to graph V2 is Vp-p which is (1.94V-1.85V) 0.09.
+   similarly Vout is Vp-p which is (113.4mV-110.0mV) 3.4mV.
+   therefore gain (Av)= 3.4mV/0.09.
+   Av=0.0377
+
+
+ 
+  RESULT:
+   Simulated DC operating point results: 
+   during DC analysis we found that for 
+   Given VDD = 1.8V
+   Drain current (Id):55.55𝜇𝐴
+   By setting L = 2µm, the required width W = 4.17µm was determined using trial and error.
+
+
+   Simulated AC analysis results:
+   during AC analysis we found that for 
+   DC Offset = 0.9V
+   Amplitude = 50mV
+   Frequency = 1 kHz    
+   Bandwidth limited for experimental use
+   Gain remains nearly constant (0 dB) for most frequencies
+
+
+   simulated trasient analysis results:
+   during transient analysis we found that for 
+   Input Signal: Sine Wave (1 kHz, 50mV amplitude)
+   Output is an inverted sine wave 
+   Av = 0.0377
 
     
 
