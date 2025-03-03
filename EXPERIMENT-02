@@ -2,4 +2,20 @@ DIFFRENTIAL AMPLIFIERS
 
 
 Task: design and analyze differential amplifier circuit for the following conditions
-VDD=3.3v, power<=3mW, Vincm=1.65v, Vocm=1.7v, Vp=0.5v. perform DC, AC analysis, frequency responce and extract the parameters.
+VDD=3.3v, power<=3mW, Vincm=1.65v, Vocm=1.7v, Vp=0.5v. perform DC, AC analysis, frequency responce and extract the parameters?
+
+
+
+
+
+A differential amplifier is a special type of electronic circuit that makes weak signals stronger. What makes it special is that it only amplifies the difference between two input signals and ignores any noise that is common to both.
+Because of this, differential amplifiers are very useful in many devices, especially when we need clear and accurate signals without interference.
+
+A differential amplifier is built using two identical transistors that are arranged as shown below. 
+This setup helps it work properly.
+
+Differential Input: It looks at the difference between the two input voltages.
+Common-Mode Input: If both inputs have the same voltage, the amplifier ignores it.
+Differential Output: The output shows a signal based on the difference between the two inputs.
+Common-Mode Output: If both inputs are the same, there should be no output at all.
+This design helps remove unwanted noise and focus only on the useful signal.
