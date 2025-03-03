@@ -1,0 +1,5 @@
+DIFFRENTIAL AMPLIFIERS
+
+
+Task: design and analyze differential amplifier circuit for the following conditions
+VDD=3.3v, power<=3mW, Vincm=1.65v, Vocm=1.7v, Vp=0.5v. perform DC, AC analysis, frequency responce and extract the parameters.
