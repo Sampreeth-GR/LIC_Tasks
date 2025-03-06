@@ -132,5 +132,21 @@ Run the simulation.
 with two amplitude of 50mV and a phase difference of 180 degree we can check whether circuit act as a linear amplifier or not with calculated range.
 
 for Vincm < 0.866V  and Vincm > 2.066 there should be distortion 
+for Vincm=0.5V
+as Vgs<=Vth
+The transitor is in off state , therefore distortion in the output circuit .
 ![Screenshot 2025-03-06 201006](https://github.com/user-attachments/assets/ebd35625-b5fc-48e1-b615-1346ba9d39b1)
+for Vincm=1.65V
+![Screenshot 2025-03-06 202414](https://github.com/user-attachments/assets/a031627a-c147-4afd-b460-24a8c989ac44)
+for Vincm=3V
+![Screenshot 2025-03-06 202356](https://github.com/user-attachments/assets/296009f2-bb1e-414c-b6c0-16d168498503)
+
+
+NOW FOR AC ANALYSIS:
+
+for this we have  to calculate gain with theoretical values .
+gain = Av= -gm*Rd where gm= (2Id)/Vov = 1.202mS
+Av= -1.202m *3.563058k = -4.2841V/V
+as we know Av in dB = 20Log AV
+gain is 12.63dB
 
