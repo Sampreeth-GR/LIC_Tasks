@@ -150,3 +150,31 @@ Av= -1.202m *3.563058k = -4.2841V/V
 as we know Av in dB = 20Log AV
 gain is 12.63dB
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+CIRCUIT 2
+replacing R3 with a current source of less than 0.909mA for power less than 3mW so we take Iss as 0.899mA.
+as we replace R3 by a current source there is a slight dicrease in Vout so to get currect Vout i have replaced RD value.
+when i theoreticall calculated the value of Rd it was 3.52K ohm but in previous ckt i increased the value of rd to get Vo=1.7v,
+but now that calculated value almost correctly matched for the design, and got Vout=1.7V
+ by following the same procedure we do DC,trancient and AC analysis:
+ DC ANALYSIS:
+ ![Screenshot 2025-03-06 214014](https://github.com/user-attachments/assets/1614a63f-78d7-4f37-96ff-86b6aaa76b70)
+TRANCIENT ANALYSIS:
+![Screenshot 2025-03-06 215451](https://github.com/user-attachments/assets/e3713a3d-9795-4efd-8b44-5aa9344aed54)
+AC ANALYSIS:
+
+
+
+
