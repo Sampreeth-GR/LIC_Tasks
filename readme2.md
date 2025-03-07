@@ -149,7 +149,8 @@ gain = Av= -gm*Rd where gm= (2Id)/Vov = 1.202mS
 Av= -1.202m *3.563058k = -4.2841V/V
 as we know Av in dB = 20Log AV
 gain is 12.63dB
-
+![Screenshot 2025-03-07 110914](https://github.com/user-attachments/assets/8f897e03-5eda-468c-9650-f1330cce8690)
+by simulation we can see that gain is 11.42, because we have adjusted the RD and Id is less than 0.45mA.
 
 
 
@@ -174,6 +175,7 @@ but now that calculated value almost correctly matched for the design, and got V
 TRANCIENT ANALYSIS:
 ![Screenshot 2025-03-06 215451](https://github.com/user-attachments/assets/e3713a3d-9795-4efd-8b44-5aa9344aed54)
 AC ANALYSIS:
+![Screenshot 2025-03-07 111708](https://github.com/user-attachments/assets/c4b2fd89-6e47-43cf-b981-55db15400d7e)
 
 
 
