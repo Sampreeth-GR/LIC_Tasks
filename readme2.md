@@ -164,7 +164,9 @@ by simulation we can see that gain is 11.42, because we have adjusted the RD and
 
 
 
-CIRCUIT 2
+CIRCUIT 2:
+
+
 replacing R3 with a current source of less than 0.909mA for power less than 3mW so we take Iss as 0.899mA.
 as we replace R3 by a current source there is a slight dicrease in Vout so to get currect Vout i have replaced RD value.
 when i theoreticall calculated the value of Rd it was 3.52K ohm but in previous ckt i increased the value of rd to get Vo=1.7v,
@@ -179,7 +181,8 @@ AC ANALYSIS:
 
 
 
-CIRCUIT 3
+CIRCUIT 3:
+
 for circuit 3 we need to replace current source by a mosfet (M3) and design its Vgs in such a way that its drain current matches the Iss value 
 for designing the mosfet we need to find the right value of Vgs first 
 we have theory Vgs=Vp+Vtn
