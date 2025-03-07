@@ -179,4 +179,28 @@ AC ANALYSIS:
 
 
 
+CIRCUIT 3
+for circuit 3 we need to replace current source by a mosfet (M3) and design its Vgs in such a way that its drain current matches the Iss value 
+for designing the mosfet we need to find the right value of Vgs first 
+we have theory Vgs=Vp+Vtn
+here Vtn is the threshold voltage of M3
+from calculation Vgs of M3 is 0.866V from traial and error method we fount the aspect as 39.1 and we set the Id(M3) as 0.899mA.
+DC ANALYSIS:
+![Screenshot 2025-03-07 162943](https://github.com/user-attachments/assets/61065de5-1715-4a71-a9b5-41468b328ee2)
+here there is a slight increase in Vout this is beacuse:
+When replacing an ideal current source with a MOSFET current source, the finite output resistance (r0) of the MOSFET causes a slight increase in the source voltage of the differential pair. Since the gate voltage remains fixed, this reduces the effective VGS of the input transistors. To compensate and stay in saturation, the drain voltage (output voltage) increases. This results in a higher output voltage compared to the ideal current source case. 
+to compensate it i have changes the value of Rd. Rd=3.5571k
+![Screenshot 2025-03-07 164916](https://github.com/user-attachments/assets/f865ab2c-743c-4cf3-a5ae-972dbd04d8ee)
+![Screenshot 2025-03-07 165008](https://github.com/user-attachments/assets/9a720873-dbcf-420a-9b32-42ca49a943dd)
+TRANSIENT ANALYSIS:
+![Screenshot 2025-03-07 165146](https://github.com/user-attachments/assets/296a4405-77d3-4a8e-9cc0-883f68e9d41e)
+AC ANALYSIS
+![Screenshot 2025-03-07 165252](https://github.com/user-attachments/assets/c144688f-efac-4e7f-acde-f0241142f051)
+
+
+
+
+
+
+
 
