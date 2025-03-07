@@ -201,6 +201,17 @@ AC ANALYSIS
 ![Screenshot 2025-03-07 165252](https://github.com/user-attachments/assets/c144688f-efac-4e7f-acde-f0241142f051)
 
 
+CIRCUIT 4:
+
+now we have to replace Rd with MOSFET which acts as a resister for this we have replaced the RD by PMOS
+with an aspect ratio of 14.0155 which act as resistor of value 3.5577K ohm.
+DC ANALYSIS:
+
+![Screenshot 2025-03-07 221402](https://github.com/user-attachments/assets/fc94e473-af35-4936-aa0d-59ad2d8257b1)
+TRANSIENT ANALYSIS:
+![Screenshot 2025-03-07 221711](https://github.com/user-attachments/assets/e4a9b63d-fc84-4896-bc6d-ae033ad110c9)
+AC ANALYSIS:
+
 
 
 
