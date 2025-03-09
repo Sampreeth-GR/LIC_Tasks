@@ -211,10 +211,17 @@ DC ANALYSIS:
 TRANSIENT ANALYSIS:
 ![Screenshot 2025-03-07 221711](https://github.com/user-attachments/assets/e4a9b63d-fc84-4896-bc6d-ae033ad110c9)
 AC ANALYSIS:
+here as we have replaced the resistance by MOSFET the GM of each mosfet leads to decrease in gain.
+![Screenshot 2025-03-09 103730](https://github.com/user-attachments/assets/19fec686-be6c-4365-88d7-db29cd65e0a8)
+the below is the graph of the differential gain of two outputs
+![Screenshot 2025-03-09 103956](https://github.com/user-attachments/assets/63e72ed7-2d62-494e-8835-46b80525bb28)
+here Vincm(p-p)=0.1v and differential output voltage is 306.18mv
+therefore gain = 3.03
+
+RESULT:
+![WhatsApp Image 2025-03-09 at 11 09 44_36068f1f](https://github.com/user-attachments/assets/79e1a1cc-7822-4148-b018-55557786348a)
 
 
-
-
-
+INFERRENCE :
 
 
