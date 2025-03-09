@@ -140,7 +140,11 @@ for Vincm=1.65V
 ![Screenshot 2025-03-06 202414](https://github.com/user-attachments/assets/a031627a-c147-4afd-b460-24a8c989ac44)
 for Vincm=3V
 ![Screenshot 2025-03-06 202356](https://github.com/user-attachments/assets/296009f2-bb1e-414c-b6c0-16d168498503)
-
+for differential gain 
+we need subtract the Vo1-Vo2 and do simulation 
+![Screenshot 2025-03-09 113728](https://github.com/user-attachments/assets/f59057ff-c244-4e48-b5f5-0f84eeba689f)
+here Vincm(p-p)=0.1v and (Vo1-Vo2)p-p=0.728v
+therefore differential gain is 7.28
 
 NOW FOR AC ANALYSIS:
 
@@ -151,6 +155,12 @@ as we know Av in dB = 20Log AV
 gain is 12.63dB
 ![Screenshot 2025-03-07 110914](https://github.com/user-attachments/assets/8f897e03-5eda-468c-9650-f1330cce8690)
 by simulation we can see that gain is 11.42, because we have adjusted the RD and Id is less than 0.45mA.
+the graph of gain has not decreased in the above ckt, this is because of the parasetic capacitors in mosfet 
+now if we connect a capaciors accross the Vout terminals we can slightly overcome the problem
+![Screenshot 2025-03-09 113004](https://github.com/user-attachments/assets/4faa52ca-d9a9-4faa-8210-6675dbcb79fc)
+for the above ckt design now we can find out the bandwidth
+for BW we need to subtract gain with 3dB which is 0-46Hz 
+
 
 
 
@@ -176,8 +186,15 @@ but now that calculated value almost correctly matched for the design, and got V
  ![Screenshot 2025-03-06 214014](https://github.com/user-attachments/assets/1614a63f-78d7-4f37-96ff-86b6aaa76b70)
 TRANCIENT ANALYSIS:
 ![Screenshot 2025-03-06 215451](https://github.com/user-attachments/assets/e3713a3d-9795-4efd-8b44-5aa9344aed54)
+differential gain analysis:
+![Screenshot 2025-03-09 114121](https://github.com/user-attachments/assets/04d608db-7714-4bec-ba87-21faa1103522)
+gain =7.19
 AC ANALYSIS:
 ![Screenshot 2025-03-07 111708](https://github.com/user-attachments/assets/c4b2fd89-6e47-43cf-b981-55db15400d7e)
+to avoid parasetic capacitance
+![Screenshot 2025-03-09 114524](https://github.com/user-attachments/assets/51e3e600-9ec5-4605-bae6-2e4c396ecd01)
+BW= (11.26-3db)=47.59Hz
+   
 
 
 
@@ -197,9 +214,15 @@ to compensate it i have changes the value of Rd. Rd=3.5571k
 ![Screenshot 2025-03-07 165008](https://github.com/user-attachments/assets/9a720873-dbcf-420a-9b32-42ca49a943dd)
 TRANSIENT ANALYSIS:
 ![Screenshot 2025-03-07 165146](https://github.com/user-attachments/assets/296a4405-77d3-4a8e-9cc0-883f68e9d41e)
+differential gain
+![Screenshot 2025-03-09 114737](https://github.com/user-attachments/assets/0190e13e-8d02-4314-a7c6-cf017bd4aa0a)
+gain=7.27
 AC ANALYSIS
 ![Screenshot 2025-03-07 165252](https://github.com/user-attachments/assets/c144688f-efac-4e7f-acde-f0241142f051)
-
+avoiding parasetic capacitance
+![Screenshot 2025-03-09 115023](https://github.com/user-attachments/assets/8c3ceedd-a939-45b5-859f-af4402421a70)
+11.34-3dB
+BW=46.79Hz
 
 CIRCUIT 4:
 
@@ -210,13 +233,18 @@ DC ANALYSIS:
 ![Screenshot 2025-03-07 221402](https://github.com/user-attachments/assets/fc94e473-af35-4936-aa0d-59ad2d8257b1)
 TRANSIENT ANALYSIS:
 ![Screenshot 2025-03-07 221711](https://github.com/user-attachments/assets/e4a9b63d-fc84-4896-bc6d-ae033ad110c9)
-AC ANALYSIS:
-here as we have replaced the resistance by MOSFET the GM of each mosfet leads to decrease in gain.
-![Screenshot 2025-03-09 103730](https://github.com/user-attachments/assets/19fec686-be6c-4365-88d7-db29cd65e0a8)
 the below is the graph of the differential gain of two outputs
 ![Screenshot 2025-03-09 103956](https://github.com/user-attachments/assets/63e72ed7-2d62-494e-8835-46b80525bb28)
 here Vincm(p-p)=0.1v and differential output voltage is 306.18mv
 therefore gain = 3.03
+AC ANALYSIS:
+here as we have replaced the resistance by MOSFET the GM of each mosfet leads to decrease in gain.
+![Screenshot 2025-03-09 103730](https://github.com/user-attachments/assets/19fec686-be6c-4365-88d7-db29cd65e0a8)
+avoiding paracetic capacitace
+![image](https://github.com/user-attachments/assets/489ce913-4fa4-4862-adcf-5e724cf90386)
+3.79-3dB
+BW=112.58Hz
+
 
 RESULT:
 ![WhatsApp Image 2025-03-09 at 11 09 44_36068f1f](https://github.com/user-attachments/assets/79e1a1cc-7822-4148-b018-55557786348a)
