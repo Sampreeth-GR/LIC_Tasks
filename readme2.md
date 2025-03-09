@@ -223,5 +223,15 @@ RESULT:
 
 
 INFERRENCE :
-
+1) varying RD:
+   First Circuit (Resistor as Tail Current Source): Since the tail current is not well-regulated, R1 and R2 may need to be increased to compensate for the lower effective current and 
+   maintain 𝑉out.
+   Second Circuit (Ideal Current Source): The tail current is constant, so no major change in R1 and 𝑅2 is required.
+   Third Circuit (MOSFET as Tail Current Source): The MOSFET has some output resistance, which slightly affects the tail current. If the output voltage increases, 𝑅1 and 𝑅2
+   should be decreased to bring it back to the desired level. Conversely, if the output voltage drops, increase 𝑅1  and 𝑅2 to maintain balance.
+2) varying Vincm:
+   there will be a slight variation in Id, as Vincm effects the channel, because of change in Id there will be change in Vo1 
+    ID is directly proportional to Vincm Vout is inversly proportional to Id. {[Vo=Vdd-Id*Rd] where Vdd,Rd-constant}.
+3) replacing Rss by MOSFET
+   by replacing we can get higher gain and better stability as compared to ckt1
 
