@@ -247,7 +247,8 @@ BW=112.58Hz
 
 
 RESULT:
-![WhatsApp Image 2025-03-09 at 11 09 44_36068f1f](https://github.com/user-attachments/assets/79e1a1cc-7822-4148-b018-55557786348a)
+![WhatsApp Image 2025-03-09 at 12 00 47_2f0e7572](https://github.com/user-attachments/assets/faa0405f-6742-457f-b562-e637dcd42d5a)
+
 
 
 INFERRENCE :
@@ -260,6 +261,11 @@ INFERRENCE :
 2) varying Vincm:
    there will be a slight variation in Id, as Vincm effects the channel, because of change in Id there will be change in Vo1 
     ID is directly proportional to Vincm Vout is inversly proportional to Id. {[Vo=Vdd-Id*Rd] where Vdd,Rd-constant}.
-3) replacing Rss by MOSFET
-   by replacing we can get higher gain and better stability as compared to ckt1
+3) replacing Rss by Current source 
+   by replacing we can get higher gain and better stability as compared to ckt1 and increase in bandwidth
+4) replacing current source by MOSFET
+   by replacing we can get higher gain and better stability as compared to ckt2 and increase in bandwidth
+5) replacing RD by PMOS
+   overall gain reduses due to Gm of all the MOSFET and Bandwidth increases 
+
 
