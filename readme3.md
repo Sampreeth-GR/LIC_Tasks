@@ -176,6 +176,14 @@ DESIGN THE DIFFERENTIAL AMPLIFIER WITH THE SAME DESIGN SPECIFICATION AS EXPERIME
 
 ![Screenshot 2025-03-23 175813](https://github.com/user-attachments/assets/8dd1a9d0-7acc-4aa3-8e24-0c95fdc6a551)
 
+as per the parameters of the differential amplifier Vdd = 1.8V, Id(M1 and M2)=0.499mA, Vout = 1.7V and as per the circuit question current mirror ratio of M3 amd M4 1:2.
+
+to get current Id(M3) = 0.899 we need to give Iref =0.499mA
+keeping L=180nm constant for all the mosfet for perfect current mirroring, by trial and error width was found to be W(4) = 3.5um, W(3) = 7um. W3 is double the W4 because we need to double increase the Id(M3).
+
+after designing the M3 and M4 we need to design the value of M1 and M2 keeping the value of L=180nm, W(M1 and M2) was found to be 90um.
+
+afer designing the M1 and M2 now we need to design the value of M11 and M22 in such a way that we need to mach the out put parameter 1.7V and it was found to 2.205um. 
 ## Transient anlysis 
 
 ![Screenshot 2025-03-23 175956](https://github.com/user-attachments/assets/666b3d5a-e295-4224-9495-87fec7144493)
