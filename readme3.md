@@ -122,3 +122,34 @@ The experiment confirms that channel length modulation significantly impacts cur
 we can se that due channel length modulation and the  difference of Gate voltage (M2 and M3) and output voltage there is small increase when we vary the channel length 
 
 2) we can see when we did 1:2 analysis we saw that there was a slight increase in current Ix which is because we had set Q point for 1:1 by W/L but when we just simply doubled the W for 1:2 the Q point got effected.
+
+
+_**BONAS PART:**_
+
+Vary the current mirror ratio and analyze current mirroring 
+
+according to the concept if the ratio is 1:1 then Iref = IX. If the ratio is 1:2 then Ix = 2*Ireff which we have already seen throungh simulation 
+
+now lets see what happens if ratio is 2:1. expected relust is Iref = 2*Ix
+
+![Screenshot 2025-03-23 145728](https://github.com/user-attachments/assets/c8a47084-ff9e-451f-80a7-1d1763be5179)
+
+i have kept W=2.3717u(M3) and W=1.18585u(M2 and M1), which shows that Iref is almost double that of Ix
+
+now for ratio 1:3. expected Ix = 3*Iref
+
+![Screenshot 2025-03-23 150153](https://github.com/user-attachments/assets/693aa5ca-2c39-49c5-bcb4-db1c90154830)
+
+i have not changed the W(M3), W=701151(M2 and M3), which shows that Ix is almost three times of Iref
+
+now for 3:1 ratio. expected Iref = 3*Ix
+
+![Screenshot 2025-03-23 150538](https://github.com/user-attachments/assets/5be320d2-551c-48b1-bdc9-fa28d668ee7d)
+
+i have kept W=2.3717u(M3) and W=0.790u(M2 and M1), which shows that Iref is almost three times of Ix
+
+_**RESULT**_
+| current mirror ratio | length(M1,M2,M3) | width(M3) | width(M2) | width(M1) | Iref | Ix(calculated) | Ix(simulated) |
+|----------------------|------------------|-----------|-----------|-----------|------|----------------|---------------|
+| 1:1 | 180nm | 2.3717um | 2.3717um | 2.3717um | 0.277mA | 0.277mA |
+| 1:2 | 180nm | 2.3717um | 4.7434um | 4.7434um | 0.277mA | 0.277mA |
