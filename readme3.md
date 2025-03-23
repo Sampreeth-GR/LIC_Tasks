@@ -124,7 +124,7 @@ we can se that due channel length modulation and the  difference of Gate voltage
 2) we can see when we did 1:2 analysis we saw that there was a slight increase in current Ix which is because we had set Q point for 1:1 by W/L but when we just simply doubled the W for 1:2 the Q point got effected.
 
 
-# _**BONAS PART:**_
+# _**BONUS PART:**_
 
 Vary the current mirror ratio and analyze current mirroring 
 
