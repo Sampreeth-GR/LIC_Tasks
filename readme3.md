@@ -1,12 +1,12 @@
-Experiment 6:
-
+# Experiment 6:
+# PART-A
 design and analyze current mirror circuit as active load in amplifier circuit 
 
-circuit diagram:
+## circuit diagram:
 
 ![Screenshot 2025-03-22 225118](https://github.com/user-attachments/assets/912cd5a5-e79a-44b0-8d74-bd22a79c1511)
 
-_**FOR DESIGN**_
+## _**FOR DESIGN**_
 
 we need to design current mirroring for Av>10, VDD=1.8 and P<3mV.
 
@@ -26,7 +26,7 @@ therefore Ireff=0.277mA
 
 
 
-_**FOR SIMULATION**_
+## _**FOR SIMULATION**_
 
 as per the circuit diagram M1 is NMOS and M2 and M3 is PMOS.
 
@@ -105,7 +105,7 @@ as per AC analysis i got 19.5dB
 
 to find band width we need to find -3dB which is 16.5dB. hence bandwidth is 100nHz to 3.14GHz.
 
-_**RESULT**_
+# _**RESULT**_
 
 1) Successful Current Mirror Design
 2) Impact of Channel Length Modulation:
@@ -114,7 +114,7 @@ _**RESULT**_
 3) Transient analysis of the amplifier with the 1:1 current mirror configuration (L=180nm) yielded a voltage gain (Av) of 9.3 V/V (19.36dB), which is slightly below the design Av > 10. 
 4) AC analysis showed  a gain of 19.5dB, similat to transient analysis results. The amplifier's bandwidth was determined to be from 100nHz to 3.14GHz, as measured from the -3dB point on the frequency response curve.
    
-_**INFERENCE **_
+# _**INFERENCE **_
 
 1) **Current Mirror Accuracy and Channel Length:**
 
@@ -124,7 +124,7 @@ we can se that due channel length modulation and the  difference of Gate voltage
 2) we can see when we did 1:2 analysis we saw that there was a slight increase in current Ix which is because we had set Q point for 1:1 by W/L but when we just simply doubled the W for 1:2 the Q point got effected.
 
 
-_**BONAS PART:**_
+# _**BONAS PART:**_
 
 Vary the current mirror ratio and analyze current mirroring 
 
@@ -148,7 +148,7 @@ now for 3:1 ratio. expected Iref = 3*Ix
 
 i have kept W=2.3717u(M3) and W=0.790u(M2 and M1), which shows that Iref is almost three times of Ix
 
-_**RESULT**_
+# _**RESULT**_
 | current mirror ratio | length(M1,M2,M3) | width(M3) | width(M2) | width(M1) | Iref | Ix(calculated) | Ix(simulated) |
 |----------------------|------------------|-----------|-----------|-----------|------|----------------|---------------|
 | 1:1 | 180nm | 2.3717um | 2.3717um | 2.3717um | 0.277mA | 0.277mA | 0.277002mA |
@@ -156,3 +156,32 @@ _**RESULT**_
 | 2:1 | 180nm | 2.3717um | 1.18585um | 1.18585um | 0.277mA | 0.1385mA | 0.144484mA |
 | 1:3 | 180nm | 2.3717um | 7.1151um | 7.1151um | 0.277mA | 0.831mA | 0.806682mA |
 | 3:1 | 180nm | 2.3717um | 0.790um | 0.790um | 0.277mA | 0.0923mA | 0.100205mA |
+
+
+
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+# PART-B
+DESIGN THE DIFFERENTIAL AMPLIFIER WITH THE SAME DESIGN SPECIFICATION AS EXPERIMENT 3 AND PERFORM DC TRANSIENT AND AC ANALYSIS.
+
+# CIRCUIT DIAGRAM:
+
+![Screenshot 2025-03-23 175624](https://github.com/user-attachments/assets/6ad54d0b-8884-4b6b-bf93-b29714905c44)
+
+## DC analysis
+
+![Screenshot 2025-03-23 175813](https://github.com/user-attachments/assets/8dd1a9d0-7acc-4aa3-8e24-0c95fdc6a551)
+
+## Transient anlysis 
+
+![Screenshot 2025-03-23 175956](https://github.com/user-attachments/assets/666b3d5a-e295-4224-9495-87fec7144493)
+
+## AC anlysis 
+
+![Screenshot 2025-03-23 180205](https://github.com/user-attachments/assets/4d682983-b02a-4de7-a52e-e0a2e9492b8b)
+
+
