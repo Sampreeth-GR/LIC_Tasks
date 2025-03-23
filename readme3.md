@@ -61,4 +61,64 @@ so after making the following changes in the circuit we get below results:
 ![Screenshot 2025-03-22 233613](https://github.com/user-attachments/assets/db38932f-889e-4413-abb7-ac6551cdfd0f)
 
 
+Now we need to varry L value keeping the aspect ratio constant and analyse the current mirroring 
 
+for L=180nm as we have already deigned Ix = Ireff
+
+for L=500nm we need to calculate the value of W, as we know the aspect ratio(W/L)  that is 13.17 for L=180nm and W=2.3717um.
+
+now for L=500nm, W/L=13.17 
+
+W=6.585um
+
+now we need substitue these value in the simulation for 1:1 current mirroring ratio and see the difference in the current flow 
+
+![Screenshot 2025-03-23 112856](https://github.com/user-attachments/assets/55065a96-4934-4db3-83e6-0825be5305b2)
+
+we can see that there is a slight increase in current which is around 2nA
+
+
+for L=1um and W/L=13.17 
+
+W=13.17um 
+
+by substituting the values in the simulation for 1:1 current mirroring ratio we get 
+
+![Screenshot 2025-03-23 114222](https://github.com/user-attachments/assets/53a92167-6103-40f9-8ce5-10472853aad1)
+
+
+now we need to do transient and AC analysis for the circuit with 1:1 current mirroring ratio and find maximum outputswing and Bandwidth.
+
+the below is the results of Transient anlysis
+
+![Screenshot 2025-03-23 120041](https://github.com/user-attachments/assets/f5197d91-08de-42fc-b16b-3a15a693fd6c)
+
+the expected gain was 10V/V, but as per simulation i got 9.3V/V.
+
+9.3V/V = 19.36dB
+
+the below is the result of Ac analysis 
+
+![Screenshot 2025-03-23 120713](https://github.com/user-attachments/assets/05830702-c33b-4d7f-a761-100df7a76661)
+
+as per AC analysis i got 19.5dB 
+
+to find band width we need to find -3dB which is 16.5dB. hence bandwidth is 100nHz to 3.14GHz.
+
+_**RESULT**_
+
+1) Successful Current Mirror Design
+2) Impact of Channel Length Modulation:
+     For L = 500nm and W = 6.585µm, the mirrored current (Ix) increased by approximately 2nA compared to the reference current.
+     For L = 1µm and W = 13.17µm, the mirrored current (Ix) showed a minimal increase compared to the reference current.
+3) Transient analysis of the amplifier with the 1:1 current mirror configuration (L=180nm) yielded a voltage gain (Av) of 9.3 V/V (19.36dB), which is slightly below the design Av > 10. 
+4) AC analysis showed  a gain of 19.5dB, similat to transient analysis results. The amplifier's bandwidth was determined to be from 100nHz to 3.14GHz, as measured from the -3dB point on the frequency response curve.
+   
+_**INFERENCE **_
+
+1) **Current Mirror Accuracy and Channel Length:**
+
+The experiment confirms that channel length modulation significantly impacts current mirror accuracy. Longer channel lengths are preferable for better current matching.  
+we can se that due channel length modulation and the  difference of Gate voltage (M2 and M3) and output voltage there is small increase when we vary the channel length 
+
+2) we can see when we did 1:2 analysis we saw that there was a slight increase in current Ix which is because we had set Q point for 1:1 by W/L but when we just simply doubled the W for 1:2 the Q point got effected.
