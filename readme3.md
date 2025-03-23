@@ -140,7 +140,7 @@ now for ratio 1:3. expected Ix = 3*Iref
 
 ![Screenshot 2025-03-23 150153](https://github.com/user-attachments/assets/693aa5ca-2c39-49c5-bcb4-db1c90154830)
 
-i have not changed the W(M3), W=701151(M2 and M3), which shows that Ix is almost three times of Iref
+i have not changed the W(M3), W=7.1151u(M2 and M3), which shows that Ix is almost three times of Iref
 
 now for 3:1 ratio. expected Iref = 3*Ix
 
@@ -151,5 +151,8 @@ i have kept W=2.3717u(M3) and W=0.790u(M2 and M1), which shows that Iref is almo
 _**RESULT**_
 | current mirror ratio | length(M1,M2,M3) | width(M3) | width(M2) | width(M1) | Iref | Ix(calculated) | Ix(simulated) |
 |----------------------|------------------|-----------|-----------|-----------|------|----------------|---------------|
-| 1:1 | 180nm | 2.3717um | 2.3717um | 2.3717um | 0.277mA | 0.277mA |
-| 1:2 | 180nm | 2.3717um | 4.7434um | 4.7434um | 0.277mA | 0.277mA |
+| 1:1 | 180nm | 2.3717um | 2.3717um | 2.3717um | 0.277mA | 0.277mA | 0.277002mA |
+| 1:2 | 180nm | 2.3717um | 4.7434um | 4.7434um | 0.185mA | 0.37mA | 0.3825mA |
+| 2:1 | 180nm | 2.3717um | 1.18585um | 1.18585um | 0.277mA | 0.1385mA | 0.144484mA |
+| 1:3 | 180nm | 2.3717um | 7.1151um | 7.1151um | 0.277mA | 0.831mA | 0.806682mA |
+| 3:1 | 180nm | 2.3717um | 0.790um | 0.790um | 0.277mA | 0.0923mA | 0.100205mA |
