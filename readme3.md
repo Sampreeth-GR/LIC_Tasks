@@ -188,8 +188,14 @@ afer designing the M1 and M2 now we need to design the value of M11 and M22 in s
 
 ![Screenshot 2025-03-23 175956](https://github.com/user-attachments/assets/666b3d5a-e295-4224-9495-87fec7144493)
 
+gain = 57 V/V =35.11dB
 ## AC anlysis 
 
 ![Screenshot 2025-03-23 180205](https://github.com/user-attachments/assets/4d682983-b02a-4de7-a52e-e0a2e9492b8b)
 
+The higher-than-expected gain suggests the circuit might have additional gain contributions from parasitic effects or device mismatches.
+
+The high bandwidth (100mHz to 504MHz) confirms that the amplifier can operate in high-frequency applications.
+
+The gain deviation could also be due to underestimation of drain resistance or transconductance variations.
 
