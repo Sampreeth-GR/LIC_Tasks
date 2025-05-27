@@ -95,12 +95,16 @@ Procedure
 4) Verify Time Parameters
    Measure the TON period of the Monostable Multivibrator when the trigger input is applied and compare it with the calculated value.
 
-## _**simulation results**_
+## **calculations**
+![WhatsApp Image 2025-05-27 at 10 28 51_8709989f](https://github.com/user-attachments/assets/ac4a1bd5-f1d4-41ee-bc30-3396fb122c91)
+
+
+## **simulation results**
 ![Screenshot 2025-05-26 214835](https://github.com/user-attachments/assets/839623af-ee3d-4440-b489-da3165e9ba9e)
 
 ![image](https://github.com/user-attachments/assets/e249d0eb-3363-45d1-987b-0e53c0850b5f)
 
-## _**Inference**_
+## **Inference**
 The output of the circuit remains LOW in its stable state until a trigger input is applied.
 
 Upon receiving the trigger, the output switches to HIGH and remains in that state for a time period determined by the RC time constant.
